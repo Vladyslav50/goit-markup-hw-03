@@ -21,6 +21,25 @@
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -29,6 +48,155 @@ body {
   background: var(--white-background-color);
   list-style-type: none;
   text-decoration: none;
+}
+
+/**-------------HEADER--------------**/
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  /*outline: 2px solid red;*/
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/**-------------IndexSection1--------------**/
+
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding: 188px 0;
+}
+
+.hero-titel {
+  max-width: 496px;
+}
+
+.hero-section {
+}
+
+.hero-button {
+}
+
+/**-------------IndexSection2--------------**/
+
+.container-withauttlt {
+  display: flex;
+  gap: 24px;
+  padding: 120px 0;
+}
+
+.list-withauttlt {
+  width: calc((100% - 24px * 3) / 4);
+}
+
+.titel-withauttlt {
+  margin-bottom: 8px;
+}
+
+/**-------------IndexSection3--------------**/
+
+.container-doing {
+  padding-bottom: 120px;
+}
+
+.section-titel {
+}
+
+.foto-doing {
+  display: flex;
+  gap: 24px;
+  margin-top: 72px;
+}
+
+/**-------------IndexSection4--------------**/
+
+.container-team {
+  padding: 120px 0;
+}
+
+.list-comand {
+  display: flex;
+  margin-top: 72px;
+  gap: 24px;
+  width: calc ((100%-24px * 3) / 4);
+}
+
+.list-section-for {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+/**-------------IndexSectionFooter--------------**/
+
+.container-footer {
+  padding: 100px 0;
+}
+
+/*!-------------PortfolioNav--------------**/
+.list-portfolio-nav {
+  display: flex;
+  flex-wrap: wrap;
+  /*align-items: center;*/
+  justify-content: center;
+  gap: 24px;
+  padding-top: 96px;
+  padding-bottom: 66px;
+}
+
+/*!-------------PortfolijListDo--------------**/
+.portfolio-list-do {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  padding-bottom: 120px;
+}
+
+.portfolio-list-modul {
+  /*width: calc((100%-24px * 2) / 3);*/
+  width: 360px;
+}
+
+.portfolio-text-do {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 0 16px;
 }
 
 .logo {
@@ -78,6 +246,7 @@ body {
 
 .hero-section {
   background: var(--hero-background-color);
+  text-align: center;
 }
 
 .hero-titel {
@@ -98,6 +267,9 @@ body {
   letter-spacing: 0.04em;
   color: var(--white-background-color);
   cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  padding: 16px 32px;
 }
 
 .hero-button:hover,
@@ -121,6 +293,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  padding-bottom: 32px;
 }
 
 .paragraf-titel {
@@ -129,6 +302,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  padding-top: 32px;
 }
 
 .section-for {
@@ -149,6 +323,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light_color);
+  max-width: 264px;
+  margin-top: 16px;
 }
 
 .logo-accent-white {
@@ -164,10 +340,15 @@ body {
   letter-spacing: 0.04em;
   cursor: pointer;
   color: var(--primary-brand-color);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: var(--pressed-state-color);
   color: var(--white-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
